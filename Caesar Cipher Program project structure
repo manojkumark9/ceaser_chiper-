@@ -1,14 +1,14 @@
-Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): e
-Enter the message to encrypt: Hello World!
-Enter the shift value (an integer): 3
-Original message: Hello World!
-Shift value: 3
-Encrypted message: Khoor Zruog!
-Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): d
-Enter the message to decrypt: Khoor Zruog!
-Enter the shift value (an integer): 3
-Original message: Khoor Zruog!
-Shift value: 3
-Decrypted message: Hello World!
-Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): q
-Exiting program.
+=== Caesar Cipher Program ===
+
+Do you want to (E)ncrypt, (D)ecrypt, or (Q)uit? E
+Enter your message: manoj
+Enter the shift value (e.g., 3): 2
+Encrypted message: ocpql
+
+Do you want to (E)ncrypt, (D)ecrypt, or (Q)uit? D
+Enter your message: ocpql
+Enter the shift value (e.g., 3): 2
+Decrypted message: manoj
+
+Do you want to (E)ncrypt, (D)ecrypt, or (Q)uit? Q
+Exiting the program. visit again!
