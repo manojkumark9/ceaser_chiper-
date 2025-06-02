@@ -1,0 +1,14 @@
+Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): e
+Enter the message to encrypt: Hello World!
+Enter the shift value (an integer): 3
+Original message: Hello World!
+Shift value: 3
+Encrypted message: Khoor Zruog!
+Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): d
+Enter the message to decrypt: Khoor Zruog!
+Enter the shift value (an integer): 3
+Original message: Khoor Zruog!
+Shift value: 3
+Decrypted message: Hello World!
+Do you want to (e)ncrypt or (d)ecrypt? (or 'q' to quit): q
+Exiting program.
