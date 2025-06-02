@@ -1,0 +1,44 @@
+# Caesar Cipher Implementation
+
+This Python program allows users to encrypt and decrypt text messages using the Caesar Cipher algorithm. The user provides a message and a shift value, and the program outputs the transformed text.
+
+## Features
+
+*   **Encryption**: Shifts letters forward in the alphabet by a specified number of positions.
+*   **Decryption**: Shifts letters backward in the alphabet by a specified number of positions.
+*   **Case Preservation**: Uppercase letters remain uppercase, and lowercase letters remain lowercase after transformation.
+*   **Non-Alphabetic Character Handling**: Spaces, numbers, punctuation, and other symbols are preserved and not affected by the cipher.
+*   **User-Friendly CLI**: Interactive command-line interface to guide the user.
+*   **Input Validation**: Basic checks for valid mode selection and integer shift values.
+
+## Algorithm
+
+The Caesar Cipher is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down or up the alphabet.
+
+*   **For Encryption**: `Cipher(x) = (x + n) mod 26`
+*   **For Decryption**: `Plain(x) = (x - n) mod 26`
+
+Where `x` is the letter (0-25 for A-Z or a-z) and `n` is the shift value. The `mod 26` operation handles the wrap-around (e.g., 'Z' shifted by 1 becomes 'A').
+
+## Requirements
+
+*   Python 3.x
+
+No external libraries beyond the standard Python library (`string` is implicitly used via `isalpha()` and character range checks, `ord()` and `chr()` are built-in) are required.
+
+## How to Run
+
+1.  **Save the Code**: Save the Python code provided above as `caesar_cipher.py` in a directory.
+2.  **Open a Terminal or Command Prompt**: Navigate to the directory where you saved the file.
+3.  **Execute the Script**: Run the program using the Python interpreter:
+    ```bash
+    python caesar_cipher.py
+    ```
+4.  **Follow Prompts**:
+    *   The program will first ask if you want to encrypt or decrypt. Enter `e` (or `encrypt`) or `d` (or `decrypt`).
+    *   Then, it will ask for the message you want to process.
+    *   Finally, it will ask for the integer shift value.
+
+    The program will then display the original message, the shift value, and the processed (encrypted or decrypted) message. You can then choose to perform another operation or quit.
+
+## Example Usage
