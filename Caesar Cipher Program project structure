@@ -12,3 +12,36 @@ Decrypted message: manoj
 
 Do you want to (E)ncrypt, (D)ecrypt, or (Q)uit? Q
 Exiting the program. visit again!
+
+==================================================================================================================================================================================================================================================================================================================
+
+How Your Caesar Cipher Program Works
+1. Program's Purpose
+Your program is a dedicated tool for the Caesar Cipher. Its main goal is to let users encrypt messages (turn them into a secret code) or decrypt messages (turn the code back into the original text). To do this, it needs a special number called the shift value, which acts as the secret key.
+
+2. The Main User Interface
+The program starts by greeting the user and then enters a continuous loop. This loop keeps presenting a simple menu: Do you want to (E)ncrypt, (D)ecrypt, or (Q)uit? If you type something else, it'll gently remind you to choose one of the valid options.
+
+3. Handling User Choices
+When you pick an option:
+
+Choosing 'Q' makes the program say goodbye and then close itself.
+If you choose 'E' (Encrypt) or 'D' (Decrypt), the program moves on to ask for the message and the shift value you want to use.
+4. Inputting Message and Shift
+After selecting encrypt or decrypt, the program prompts you for two key pieces of information:
+
+Your message: This is the text you want to work with.
+The shift value: This is a whole number (like 3 or 7) that tells the cipher how much to "shift" each letter. The program is smart enough to catch if you type something that isn't a number for the shift and will ask you to try again.
+5. The Encryption Process
+When you choose to encrypt, the program takes your message and the shift value. It then goes through your message character by character:
+
+For each letter, it shifts it forward in the alphabet by the specified shift value. If shifting a letter goes past 'Z' (or 'z' for lowercase), it simply wraps around to the beginning of the alphabet (e.g., 'X' shifted by 3 becomes 'A').
+Any characters that aren't letters (like spaces, numbers, or punctuation) are left exactly as they are and carried over to the encrypted message.
+6. The Decryption Process (A Clever Reuse)
+For decryption, the program employs a clever trick: it doesn't need completely separate logic. Instead, it uses the same core shifting mechanism as encryption, but effectively applies a negative shift. So, if a message was encrypted with a shift of 3, decrypting with a shift of -3 will move each letter backward the same amount, perfectly restoring the original message.
+
+7. Displaying the Result
+After the encryption or decryption is finished, the program clearly shows you the outcome. It will display the encrypted message (if you chose 'E') or the decrypted message (if you chose 'D') right there on the screen.
+
+8. Continuous Use and Exiting
+The program is designed for ease of use. Once it shows you the result, it immediately cycles back to the main menu, ready for your next command. This loop continues until you specifically tell it to 'Q'uit, at which point it prints a final message and gracefully closes
